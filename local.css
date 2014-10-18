@@ -216,6 +216,9 @@ body {
 .featurette li {
   margin-top: 5px;
 }
+.featurette p.lead, .featurette ul.lead {
+  font-weight: 400;
+}
 
 
 /* RESPONSIVE CSS
