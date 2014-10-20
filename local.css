@@ -136,6 +136,11 @@ body {
   margin-top: 10px;
 }
 
+.carousel-indicators {
+  top: 440px;
+  left: 50%;
+}
+
 .fancybox-overlay {
   background: url(img/fancybox_overlay.png);
 }
