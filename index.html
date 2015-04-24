@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,349 +17,139 @@
       <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
       <![endif]-->
       <link href="assets/css/bootplus.css" rel="stylesheet">
+      <style type="text/css">
+      body {
+        padding-top: 46px;
+        padding-bottom: 40px;
+      }
+       .hero-unit {
+          background: #00001C url(assets/img/cover4.jpg) no-repeat top left;
+       }
+       .hero-unit h1 {color: #FFF}
+       .hero-unit p {color: #F5F5F5}
+      </style>
       <link href="assets/css/bootplus-responsive.css" rel="stylesheet">
       <!--link rel="stylesheet" href="css/blueimp-gallery.min.css">
       <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css"-->
       <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
-      <link href="local.css" rel="stylesheet">
+      <!--link href="local.css" rel="stylesheet"-->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
+
+      <!-- Fav and touch icons -->
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/favicon-144.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/favicon-114.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/favicon-72.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/favicon-57.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
   </head>
 
   <body>
 
+      <div class="navbar navbar-fixed-top">
+         <div class="navbar-inner">
+           <div class="container">
+             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             <a class="brand" href="#">Project name</a>
+             <div class="nav-collapse collapse">
+               <ul class="nav">
+                 <li class="active"><a href="#">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#contact">Contact</a></li>
+                 <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#">Action</a></li>
+                     <li><a href="#">Another action</a></li>
+                     <li><a href="#">Something else here</a></li>
+                     <li class="divider"></li>
+                     <li class="nav-header">Nav header</li>
+                     <li><a href="#">Separated link</a></li>
+                     <li><a href="#">One more separated link</a></li>
+                   </ul>
+                 </li>
+               </ul>
+               <form class="navbar-form pull-right">
+                 <input class="span2" type="text" placeholder="Email">
+                 <input class="span2" type="password" placeholder="Password">
+                 <button type="submit" class="btn btn-primary">Sign in</button>
+               </form>
+             </div><!--/.nav-collapse -->
+           </div>
+         </div>
+       </div>
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+         <div class="container">
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+         </div>
+      </div>
 
 
-    <!-- NAVBAR
-    ================================================== -->
-    <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
 
-        <div class="navbar _navbar-inverse navbar-fixed">
-          <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            
-            <div class="text-center logo">
-              <span class="logoletter">M</span>alware 
-              <span class="logoletter">I</span>nformation 
-              <span class="logoletter">S</span>haring 
-              <span class="logoletter">P</span>latform
-            </div>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#usecase">Use-cases</a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
-                <li><a href="#screenshots">Screenshots</a></li>
-                <li><a target="_blank" href="http://github.com/MISP/MISP">Source Code</a></li>
-                <!--li><a href="#public">Public MISP</a></li-->
-                <li><a href="#support">Support</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div><!-- /.navbar-inner -->
-        </div><!-- /.navbar -->
 
-      </div> <!-- /.container -->
-    </div><!-- /.navbar-wrapper -->
-
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/malware-bg.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Simply Threats.</h1>
-              <p class="lead">The primary goal of MISP is to be used. This is why <b>simplicity is the driving force</b> behind the project. <b>Storing and especially using information</b> about threats and malware should not be difficult. MISP is there to help you <b>get the maximum out of your data without unmanageable complexity</b>.</p>
-              <a class="btn btn-large btn-primary" href="#features">Learn more &raquo;</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/automation-bg.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>The key is Automation.</h1>
-              <p class="lead">
-                Isn't it sad to have a lot of data and not use it because it's too much work? Thanks to MISP you can <b>store your IOCs</b> in a structured manner, and thus enjoy the <b>correlation</b>, <b>automated exports</b> for IDS, or SIEM, in STIX or OpenIOC and even to other MISPs.
-                You can now <b>leverage the value of your data</b> without effort and in an automated manner.
-              </p>
-              <a class="btn btn-large btn-primary" href="#usecase">Read more &raquo;</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/sharing-bg.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>By giving you will receive.</h1>
-              <p class="lead">
-                Sharing is key to <b>fast and effective detection of attacks</b>. Quite often similar organisations are targeted by the same Threat Actor, in the same or different Campaign.
-                MISP will make it easier for you to <b>share with</b>, but also to <b>receive from trusted partners and trust-groups</b>. <br/>
-                Sharing also enabled <b>collaborative analysis</b> and prevents you from doing the work someone else already did before.
-              </p>
-              <a class="btn btn-large btn-primary disabled" href="#">Public OSINT instance coming soon</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
-
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <!--div class="container marketing" -->
-    <div class="marketing">
-
-      <!-- Three columns of text below the carousel -->
+      <!-- Example row of columns -->
       <div class="row">
-        <div class="">
-        </div>
         <div class="span4">
-           <div class="well">
-             <img class="img-circle" src="img/question.jpg">
-             <h2>Requesting feedback</h2>
-             <p>Together with the <a href="http://openinfosecfoundation.org">Open Information Security Foundation</a> we are launching a questionnaire to get a <b>better view on the user base</b> and on <b>possible support</b> MISP could benefit to coordinate efforts and guarantee MISP governance on long term.</p>
-             <p><a class="btn btn-primary" href="https://docs.google.com/forms/d/1LLRaD6MQsCo5IoiJkRIL9ff6ofOOwUDYEtW9hOVaog4/viewform?usp=send_form" target="_blank">Give feedback now &raquo;</a></p>
-           </div>
-        </div><!-- /.span4 -->
+            <div class="card">
+              <h3 class="card-heading simple">What is MISP?</h3>
+              <div class="card-body">
+                <img class="img-circle pull-right" src="img/usecase.png">
+                <p><b>A platform for sharing, storing and correlating Indicators of Compromises of targeted attacks.</b></p>
+                <p>Discover how MISP is <b>used today</b> in multiple organisations. Not only to store, share, collaborate on malware, but also to use the IOCs to <b>detect and prevent attacks</b>.
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-primary btn-block" href="#features">View details &raquo;</a>
+              </div>
+            </div>
+       </div>
+
         <div class="span4">
-           <div class="well">
-             <img class="img-circle" src="img/usecase.png">
-             <h2>Use-cases</h2>
-             <p>Discover how MISP is <b>used today</b> in multiple organisations. Not only to store, share, collaborate on malware, but also to use the IOCs to <b>detect and prevent attacks</b>. 
-             <p><a class="btn btn-primary" href="#usecase">View details &raquo;</a></p>
-           </div>
-        </div><!-- /.span4 -->
+            <div class="card">
+              <h3 class="card-heading simple">Free and Open Source with Support</h3>
+              <div class="card-body">
+                <img class="img-circle pull-right" src="img/euro.jpg">
+                <p>
+                MISP is <b>free and open source</b> (AGPL) under a <b>non-profit</b> model. However you can support it's development by <b>paid support, custom development or sponsorship</b>. Contributions to planned features are also welcome.
+                </p>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-primary btn-block"  target="_blank" href="http://github.com/MISP/MISP">Download now &raquo;</a>
+                <a class="btn btn-primary btn-block" href="#support">Get Support &raquo;</a>
+              </div>
+            </div>
+        </div>
+
         <div class="span4">
-           <div class="well">
-             <img class="img-circle" src="img/euro.jpg">
-             <h2>Free and Open Source</h2>
-             <p>
-              MISP is <b>free and open source</b> (AGPL) under a <b>non-profit</b> model. However you can support it's development by sponsorship, paid <b>support or custom development</b>. Contributions to planned features are also welcome.
-             </p>
-             <p><a class="btn btn-primary" href="#contact">Support MISP &raquo;</a></p>
-           </div>
-        </div><!-- /.span4 -->
-        
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-      <hr class="featurette-divider">
-
-
-      <div class="featurette-background" style="background-image: url('img/features-bg.jpg');">
-      <div class="container featurette" id="features">
-        <img class="featurette-image pull-right" src="img/misp-event-icon.png">
-        <div class="featurette-text">
-        <h2 class="featurette-heading">MISP v2.3 features</h2>
-        <ul class="lead">
-        <li><strong>central IOC database</strong>: storing technical and non-technical information about malwares and attacks, ... Data from external instances is also imported into your local instance</li>
-        <li><strong>easy to use</strong>: usability is key to MISP. Free-text import, OpenIOC or configurable templates are there to releave you from the burden of encoding observables and indicators</li>
-        <li><strong>correlation</strong>: automatically creating relations between malwares, events and attributes</li>
-        <li><strong>security by design</strong>: regularly pentested, GPG encryption and signing of the mails, ...</li>
-        <li><strong>export</strong>: generating IDS, STIX, OpenIOC, plain text, xml output to integrate with other systems (IDS, SIEM, custom tools, ...)</li>
-        <li><strong>import</strong>: bulk-import, batch-import, import from OpenIOC, GFI sandbox, ThreatConnect CSV, ...</li>
-        <li><strong>data-sharing</strong>: automatically exchange and synchronization with other parties and trust-groups using MISP</li>
-        <li><strong>STIX support</strong>: export data in the STIX format (XML and json)</li>
-
-        </ul>
+            <div class="card">
+              <h3 class="card-heading simple">Requesting feedback</h3>
+              <div class="card-body">
+                <img class="img-circle pull-right" src="img/question.jpg">
+                <p>The MISP project launched a questionnaire to get a <b>better view on the user base</b> and on <b>possible support</b> MISP could benefit to coordinate efforts and guarantee MISP governance on long term.</p>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-primary btn-block" href="https://docs.google.com/forms/d/1LLRaD6MQsCo5IoiJkRIL9ff6ofOOwUDYEtW9hOVaog4/viewform?usp=send_form" target="_blank">Give feedback now &raquo;</a>
+              </div>
+            </div>
         </div>
       </div>
-      </div>
 
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
 
-      <hr class="featurette-divider">
-
-
-      <div class="featurette-background" style="background-image: url('img/users-bg.jpg');" alt="Duncan Hull - CC - changed color">
-      <div class="container featurette" id="users">
-        <img class="featurette-image pull-left" src="img/transparent-icon.png">
-        <div class="featurette-text" style="color: white;">
-        <h2 class="featurette-heading">Today MISP is used by</h2>
-        <h3 >CERTs and Governments</h3>
-        <h3>ISACs and Trust-groups</h3>
-        <h3>Private Companies</h3>
-        </div>
-      </div>
-      </div>
-
-
-      <hr class="featurette-divider">
-
-
-      <div class="featurette-background">
-      <div class="container featurette" id="usecase">
-        <img class="featurette-image pull-right" src="img/usecase-icon.jpg">
-        <div class="featurette-text" style="background-color: white;">
-        <h3>Sharing with humans</h3>
-        <p class="lead">Data you store is immediately available to your <b>colleagues</b> and <b>partners</b>. Store the event id in your ticketing system or be informed by the signed and encrypted email notifications. 
-        </p>
-        <h3>Sharing with machines</h3>
-        <p class="lead">By generating <b>Snort/Suricata IDS rules, STIX, OpenIOC</b>, text or csv exports MISP allows you to <b>automatically</b> import data in your detection systems resulting in <b>better and faster detection</b> of intrusions.</p>
-        <p class="lead">
-        Importing data can also be done in various ways: <b>free-text import, OpenIOC, batch import</b>, or using the preconfigured or <b>custom templates</b>.
-        </p>
-        <p class="lead">
-        If you run MISP internally, data can also be uploaded and downloaded automagically <b>from and to externally hosted MISP instances</b>. Thanks to this automation and the effort of others you are now in possession of valuable indicators of compromise with no additional work. </p>
-        <h3>Collaborative analysis and correlation</h3>
-        <p class="lead">How often has your team analyzed to realise at the end that a <b>colleague had already worked on another, similar, sample</b>? Or that an external report has already been made? </p>
-        <p class="lead">
-        When new data is added MISP will immediately show <b>relations with other observables and indicators</b>. This results in more efficient analysis, but also allows you to have a better picture of the TTPs, related campaigns and attribution.</p>
-        <p class="lead">The <b>discussion</b> feature will also enable conversations between multiple analysts resulting in <b>win-win</b> for everyone.</p>
-        </div>
-      </div>
-      </div>
-
-
-      <hr class="featurette-divider">
-
-
-      <div class="featurette-background" style="background-image: url('img/roadmap-bg.jpg');">
-      <div class="container featurette" id="roadmap">
-        <img class="featurette-image pull-left" src="img/roadmap-icon.png">
-        <div class="featurette-text">
-        <h2 class="featurette-heading">Planned roadmap</span></h2>
-        <h3>v2.4</h3>
-        <ul class="lead">
-        <li>Sharing groups or 'Releasable to' model</li>
-        <li>Modular import / export with plugins</li>
-        </ul>
-        <h3>v3.0+</h3>
-        <ul class="lead">
-        <li>New data model allowing composite objects (ex: file described by hashes, filenames, ...)</li>
-        <li>Import of STIX data and better support for OpenIOC</li>
-        <li>Support Cyber Threat Intelligence structures such as Campaigns, Threat Actors, TTPs,...</li>
-        <li>Further integration with other tools: Import/Export from/to sandboxes, external feeds, ...</li>
-        <li>Enrichment by gathering additional information on the data you're entering.</li>
-        </ul>
-        <a class="btn btn-large btn-primary" href="#contact">Support the development &raquo;</a>
-        </div>
-      </div>
-      </div>
-
-
-      <hr class="featurette-divider">
-
-
-      <div class="featurette" id="screenshots">
-      <div class="container featurette" id="links">
-      <h2 class="featurette-heading">Screenshots</h2>
-        <div style="text-align:center;">
-      <!-- here we should place the images for the images gallery -->
-          <a class="fancybox" rel="gallery1" href="img/screenshots/full/event-view.png" title="Details of an event" data-gallery>
-              <img src="img/screenshots/thumb/event-view.png" alt="">
-          </a>
-          <a class="fancybox" rel="gallery1" href="img/screenshots/full/event-new.png" title="Create a new event" data-gallery>
-              <img src="img/screenshots/thumb/event-new.png" alt="">
-          </a>
-          <a class="fancybox" rel="gallery1" href="img/screenshots/full/attribute-new.png" title="Add attributes" data-gallery>
-              <img src="img/screenshots/thumb/attribute-new.png" alt="">
-          </a>
-          <a class="fancybox" rel="gallery1" href="img/screenshots/full/freetext.png" title="Add attributes with automatic detection of the data type" data-gallery>
-              <img src="img/screenshots/thumb/freetext.png" alt="">
-          </a>
-          <a class="fancybox" rel="gallery1" href="img/screenshots/full/importregexp.png" title="Newly created attributes are normalized" data-gallery>
-              <img src="img/screenshots/thumb/importregexp.png" alt="">
-          </a>
-          <a class="fancybox" rel="gallery1" href="img/screenshots/full/template-select.png" title="Import multiple attributes using templates" data-gallery>
-              <img src="img/screenshots/thumb/template-select.png" alt="">
-          </a>
-          <a class="fancybox" rel="gallery1" href="img/screenshots/full/template-use.png" title="Import multiple attributes using templates" data-gallery>
-              <img src="img/screenshots/thumb/template-use.png" alt="">
-          </a>
-          <a class="fancybox" rel="gallery1" href="img/screenshots/full/user.png" title="User profile with GPG key" data-gallery>
-              <img src="img/screenshots/thumb/user.png" alt="">
-          </a>
-          <a class="fancybox" rel="gallery1" href="img/screenshots/full/event-search.png" title="Search for events" data-gallery>
-              <img src="img/screenshots/thumb/event-search.png" alt="">
-          </a>
-          <a class="fancybox" rel="gallery1" href="img/screenshots/full/event-list.png" title="List of events" data-gallery>
-              <img src="img/screenshots/thumb/event-list.png" alt="">
-          </a>
-          </div>
-      </div>
-      </div>
-
-
-      <hr class="featurette-divider">
-
-
-      <div class="featurette-background" style="background-image: url('img/support-bg.jpg');" alt="alcomm - CC BY NC ">
-      <div class="container featurette" id="support">
-        <img class="featurette-image pull-right" src="img/transparent-icon.png">
-        <div class="featurette-text">
-        <h2 class="featurette-heading">Support</h2>
-        <h3>Community</h3>
-        <ul class="lead">
-        <li>Users forum: <a href="https://groups.google.com/forum/#!forum/misp-group">https://groups.google.com/forum/#!forum/misp-group</a></li>
-        <li>Documentation: <a href="https://github.com/MISP/MISP/tree/master/INSTALL">User &amp; Install guide</a></li>
-        <li>Source code: <a href="https://github.com/MISP/">https://github.com/MISP/</a></li>
-        <li>Issue tracking: <a href="https://github.com/MISP/MISP/issues">https://github.com/MISP/MISP/issues</a></li>
-        </ul>
-        <h3>Paid support</h3>
-        <p class="lead">Get direct access to the developers of MISP and sponsor the development of the project indirectly. More information coming soon.</p>
-        </div>
-      </div>
-      </div>
-
-
-      <hr class="featurette-divider">
-
-
-      <div class="featurette-background" style="background-image: url('img/contact-bg.jpg');" alt="YuMaNuMa - CC">
-      <div class="container featurette" id="contact">
-        <img class="featurette-image pull-left" src="img/transparent-icon.png">
-        <div class="featurette-text">
-        <h2 class="featurette-heading">Contact us.</h2>
-        <p class="lead">Together with the <a href="http://openinfosecfoundation.org" target="_blank">Open Information Security Foundation</a> we are launching a questionnaire to get a <b>better view on the user base</b> and on <b>possible support</b> MISP could benefit to coordinate efforts and guarantee MISP governance on long term.</p>
-             <p><a class="btn btn-large btn-primary" href="https://docs.google.com/forms/d/1LLRaD6MQsCo5IoiJkRIL9ff6ofOOwUDYEtW9hOVaog4/viewform?usp=send_form" target="_blank">Give feedback now &raquo;</a></p>
-        <p class="lead">&nbsp;</p>
-        <p class="lead">Do you have a more specific question or remark? </p>
-             <p><a class="btn btn-large btn-primary" href="mailto:info@misp-project.org">Contact us by email &raquo;</a></p>
-        </div>
-      </div>
-      </div>
-
-      <!-- /END THE FEATURETTES -->
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <!--footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-      </footer-->
-
-    </div><!-- /.container -->
-
+      </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
@@ -377,40 +168,5 @@
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
 
-    <!--script src="js/jquery.blueimp-gallery.min.js"></script>
-    <script src="js/bootstrap-image-gallery.min.js"></script-->
-    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
-    <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel({
-              interval: 7000
-            })
-        })
-      }(window.jQuery);
-
-      $(document).ready(function(){
-        $('a[href^="#"]').on('click',function (e) {
-            e.preventDefault();
-
-            var target = this.hash,
-            $target = $(target);
-
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top
-            }, 900, 'swing', function () {
-                window.location.hash = target;
-            });
-        });
-      });
-      $(document).ready(function() {
-        $(".fancybox").fancybox({
-          openEffect  : 'none',
-          closeEffect : 'none'
-        });
-      });
-    </script>
-    <script src="assets/js/holder/holder.js"></script>
-  </body>
+   </body>
 </html>
