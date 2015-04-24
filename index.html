@@ -36,10 +36,10 @@
                                  <link rel="shortcut icon" href="assets/ico/favicon.png">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
 
 
-
+  <a class="anchor" id="home"></a>
     <!-- NAVBAR
     ================================================== -->
     <div class="navbar-wrapper">
@@ -60,7 +60,7 @@
               <span class="logoletter">S</span>haring 
               <span class="logoletter">P</span>latform
              </div>
-             <div class="nav-collapse collapse">
+             <div class="nav-collapse collapse" data-spy="affix" data-offset-top="20" id="navbar">
               <ul class="nav">
                 <li class="active"><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
@@ -183,6 +183,105 @@
         </div>
       </div>
 
+      <a class="anchor" id="features"></a>
+      <div class="row">
+        <div class="span12">
+        <div class="card imageblock">
+        <img class="pull-right" src="img/misp-event-icon.png">
+        <h3 class="card-heading simple">MISP v2.3 features</h3>
+        <ul>
+        <li><strong>central IOC database</strong>: storing technical and non-technical information about malwares and attacks, ... Data from external instances is also imported into your local instance</li>
+        <li><strong>easy to use</strong>: usability is key to MISP. Free-text import, OpenIOC or configurable templates are there to releave you from the burden of encoding observables and indicators</li>
+        <li><strong>correlation</strong>: automatically creating relations between malwares, events and attributes</li>
+        <li><strong>security by design</strong>: regularly pentested, GPG encryption and signing of the mails, ...</li>
+        <li><strong>export</strong>: generating IDS, STIX, OpenIOC, plain text, xml output to integrate with other systems (IDS, SIEM, custom tools, ...)</li>
+        <li><strong>import</strong>: bulk-import, batch-import, import from OpenIOC, GFI sandbox, ThreatConnect CSV, ...</li>
+        <li><strong>data-sharing</strong>: automatically exchange and synchronization with other parties and trust-groups using MISP</li>
+        <li><strong>STIX support</strong>: export data in the STIX format (XML and json)</li>
+        </ul>
+        </div>
+        </div>
+      </div>
+
+
+      <a class="anchor" id="usecase"></a>
+      <div class="row">
+        <div class="span12">
+        <div class="card">
+        <img class="pull-right" src="img/automation-icon.png">
+        <h3 class="card-heading simple">Sharing with humans</h3>
+        <div class="card-body">
+          <p>Data you store is immediately available to your <b>colleagues</b> and <b>partners</b>. Store the event id in your ticketing system or be informed by the signed and encrypted email notifications.</p>
+        </div>
+        <h3 class="card-heading simple">Sharing with machines</h3>
+        <div class="card-body">
+          <p>By generating <b>Snort/Suricata IDS rules, STIX, OpenIOC</b>, text or csv exports MISP allows you to <b>automatically</b> import data in your detection systems resulting in <b>better and faster detection</b> of intrusions.</p>
+          <p>Importing data can also be done in various ways: <b>free-text import, OpenIOC, batch import</b>, or using the preconfigured or <b>custom templates</b>.</p>
+          <p>If you run MISP internally, data can also be uploaded and downloaded automagically <b>from and to externally hosted MISP instances</b>. Thanks to this automation and the effort of others you are now in possession of valuable indicators of compromise with no additional work. </p>
+        </div>
+
+        <h3 class="card-heading simple">Collaborative analysis and correlation</h3>
+        <div class="card-body">
+          <p>How often has your team analyzed to realise at the end that a <b>colleague had already worked on another, similar, sample</b>? Or that an external report has already been made? </p>
+          <p>
+          When new data is added MISP will immediately show <b>relations with other observables and indicators</b>. This results in more efficient analysis, but also allows you to have a better picture of the TTPs, related campaigns and attribution.</p>
+          <p>The <b>discussion</b> feature will also enable conversations between multiple analysts resulting in <b>win-win</b> for everyone.</p>
+        </div>
+        </div>
+      </div>
+      </div>
+
+
+      
+      <a class="anchor" id="screenshots"></a>
+      <div class="row">
+        <div class="span12">
+        <div class="card">
+              <h3 class="card-heading simple">Screenshots</h3>
+              <div class="card-body">
+              <div style="text-align:center;">
+              <!-- here we should place the images for the images gallery -->
+              <a class="fancybox" rel="gallery1" href="img/screenshots/full/event-view.png" title="Details of an event" data-gallery>
+                  <img src="img/screenshots/thumb/event-view.png" alt="">
+              </a>
+              <a class="fancybox" rel="gallery1" href="img/screenshots/full/event-new.png" title="Create a new event" data-gallery>
+                  <img src="img/screenshots/thumb/event-new.png" alt="">
+              </a>
+              <a class="fancybox" rel="gallery1" href="img/screenshots/full/attribute-new.png" title="Add attributes" data-gallery>
+                  <img src="img/screenshots/thumb/attribute-new.png" alt="">
+              </a>
+              <a class="fancybox" rel="gallery1" href="img/screenshots/full/freetext.png" title="Add attributes with automatic detection of the data type" data-gallery>
+                  <img src="img/screenshots/thumb/freetext.png" alt="">
+              </a>
+              <a class="fancybox" rel="gallery1" href="img/screenshots/full/importregexp.png" title="Newly created attributes are normalized" data-gallery>
+                  <img src="img/screenshots/thumb/importregexp.png" alt="">
+              </a>
+              <a class="fancybox" rel="gallery1" href="img/screenshots/full/template-select.png" title="Import multiple attributes using templates" data-gallery>
+                  <img src="img/screenshots/thumb/template-select.png" alt="">
+              </a>
+              <a class="fancybox" rel="gallery1" href="img/screenshots/full/template-use.png" title="Import multiple attributes using templates" data-gallery>
+                  <img src="img/screenshots/thumb/template-use.png" alt="">
+              </a>
+              <a class="fancybox" rel="gallery1" href="img/screenshots/full/user.png" title="User profile with GPG key" data-gallery>
+                  <img src="img/screenshots/thumb/user.png" alt="">
+              </a>
+              <a class="fancybox" rel="gallery1" href="img/screenshots/full/event-search.png" title="Search for events" data-gallery>
+                  <img src="img/screenshots/thumb/event-search.png" alt="">
+              </a>
+              <a class="fancybox" rel="gallery1" href="img/screenshots/full/event-list.png" title="List of events" data-gallery>
+                  <img src="img/screenshots/thumb/event-list.png" alt="">
+              </a>
+              </div>
+
+
+
+              </div>
+           </div>
+
+        </div>
+      </div>
+
+
       <footer>
         <p>&copy; </p>
       </footer>
@@ -206,5 +305,43 @@
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
 
+    <!--script src="js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script-->
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // ScrollSpy
+          $('#navbar').scrollspy();
+          // carousel demo
+          $('#myCarousel').carousel({
+              interval: 7000
+            });
+          $('#screenshots').tooltip();
+        })
+      }(window.jQuery);
+
+      $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash,
+            $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+      });
+      $(document).ready(function() {
+        $(".fancybox").fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none'
+        });
+      });
+    </script>
+    <script src="assets/js/holder/holder.js"></script>
    </body>
 </html>
