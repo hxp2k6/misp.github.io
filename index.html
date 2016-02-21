@@ -189,17 +189,22 @@
         <div class="span12">
         <div class="card imageblock">
         <img class="pull-right" src="img/misp-event-icon.png">
-        <h3 class="card-heading simple">MISP v2.3 features</h3>
+        <h3 class="card-heading simple">MISP v2.4 features</h3>
         <ul>
-        <li><strong>central IOC database</strong>: storing technical and non-technical information about malwares and attacks, ... Data from external instances is also imported into your local instance</li>
-        <li><strong>easy to use</strong>: usability is key to MISP. Free-text import, OpenIOC or configurable templates are there to releave you from the burden of encoding observables and indicators</li>
-        <li><strong>correlation</strong>: automatically creating relations between malwares, events and attributes</li>
-        <li><strong>security by design</strong>: regularly pentested, GPG encryption and signing of the mails, ...</li>
-        <li><strong>export</strong>: generating IDS, STIX, OpenIOC, plain text, xml output to integrate with other systems (IDS, SIEM, custom tools, ...)</li>
-        <li><strong>import</strong>: bulk-import, batch-import, import from OpenIOC, Joe Sandbox, GFI SandBox, ThreatConnect CSV, ...</li>
-        <li><strong>data-sharing</strong>: automatically exchange and synchronization with other parties and trust-groups using MISP</li>
-        <li><strong>STIX support</strong>: export data in the STIX format (XML and json)</li>
-        <li><strong>automation</strong>: REST API, PyMISP, ZeroMQ</li>
+                <li> An <strong>efficient IOC and indicators</strong> database allowing to store technical and non-technical information about malware samples, incidents, attackers and intelligence.
+                <li> Automatic <strong>correlation</strong> finding relationships between attributes and indicators from malware, attacks campaigns or analysis.
+                <li> Built-in <strong>sharing functionality</strong> to ease data sharing using different model of distributions. MISP can synchronize automatically events and attributes among different MISP. Advanced filtering functionalities can be used to meet each organization sharing policy including a <strong>flexible sharing group</strong> capacity and an attribute level distribution mechanisms.
+                <li> An <strong>intuitive user-interface</strong> for end-users to create, update and collaborate on events and attributes/indicators. A <strong>graphical interface</strong> to navigate seamlessly between events and their correlations.
+                <li> <strong>storing data</strong> in a structured format (allowing automated use of the database for various purposes) with an extensive support of cyber security indicators along fraud indicators as in the financial sector.
+                <li> <strong>export<strong>: generating IDS, OpenIOC, plain text, CSV, MISP XML or JSON output to integrate with other systems (network IDS, host IDS, custom tools)
+                <li> <strong>import<strong>: bulk-import, batch-import, import from OpenIOC, GFI sandbox, ThreatConnect CSV.
+                <li> Flexible <strong>free text import</strong> tool to ease the integration of unstructured reports into MISP.
+                <li> A gentle system to <strong>collaborate</strong> on events and attributes allowing MISP users to propose changes or updates to attributes/indicators.
+                <li> <strong>data-sharing</strong>: automatically exchange and synchronization with other parties and trust-groups using MISP.
+                <li> <strong>delegating of sharing</strong>: allows a simple pseudo-anonymous mechanism to delegate publication of event/indicators to another organization.
+                <li> Flexible <strong>API</strong> to integrate MISP with your own solutions. MISP is bundled with <a href="https://github.com/MISP/PyMISP">PyMISP</a> which is a flexible Python Library to fetch, add or update events attributes, handle malware samples or search for attributes.
+                <li> <strong>Adjustable taxonomy<strong> to classify and tag events following your own classification schemes or <a href="https://github.com/MISP/misp-taxonomies">existing taxonomies</a>. The taxonomy can be local to your MISP but also shareable among MISP instances.
+                <li> <strong>STIX support</strong>: export data in the STIX format (XML and JSON).
         </ul>
         </div>
         </div>
@@ -261,16 +266,10 @@
         <div class="card-body">
           <p>The roadmap of the MISP software project was created in a collaborative effort using the feedback from various users and communities using MISP. It is possible to accelerate the development of new features by <a href="#support">supporting the MISP project</a>. However it is not possible to force new features unilaterally. Things that only benefit your own organisation are free to be developed independently of the official MISP Project.</p>
         </div>
-        <h4 class="card-heading simple">v2.4</h4>
-        <div class="card-body">
-          <ul>
-          <li>Sharing groups or 'Releasable to' model</li>
-          </ul>
-        </div>
         <h4 class="card-heading simple">v2.5</h4>
         <div class="card-body">
           <ul>
-          <li>Modular import / export with plugins <small><i>(delayed from 2.4)</i></small></li>
+          <li>Modular import / export with plugins <small></small></li>
           </ul>
         </div>
         <h4 class="card-heading simple">v3.0+</h4>
